@@ -1,5 +1,5 @@
-package ConsoleApps.HelloUser;
-/**
+package WelcomeUSer;
+/*
  * -------------------------
  * Welcome user: HelloUSer
  * Type: Console App
@@ -29,11 +29,13 @@ public class HelloUser {
 
     public static void main(String[] args) {
 
-        System.out.println("------------------------------------------------------");
+        System.out.println("\n------------------------------------------------------");
         System.out.println("\t\tHello User! "+message.toUpperCase());
-        System.out.println("------------------------------------------------------");
+        System.out.println("------------------------------------------------------\n");
         System.out.print("Enter your name: ");
         username = input.nextLine();
+        System.out.println("\n");
+        //set a timer
         int x = 93, y = 100;
         System.out.print("processing.");
         for (int i = x; i <= y ; i++) {
@@ -61,7 +63,7 @@ public class HelloUser {
 
         System.out.println("Thanks for using the program\n" +
                 "Date & Time: "+localDateTime.format(getTimeFormatter));
-        System.out.println("------------------------------------------------------");
+        System.out.println("------------------------------------------------------\n");
 
     }
 }
